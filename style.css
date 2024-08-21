@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #B5CFB7;
+    background-color: #F6F7C4;
 }
 .container {
     width: 50%;
@@ -31,9 +31,32 @@ body {
     margin: 5px;
     
 }
+#task-list {
+    position: relative; /*hamburger menünün konumunu ayarlamak için gerekli */
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 0;  
+    right: 5px; 
+    
+    
+  }
+  
 
 .dropdown-toggle::after {
     display: none;
+}
+/* Trash icon (Sil) rengini kırmızı yapma */
+.dropdown-menu .fa-trash {
+    color: red;
+    margin-right: 5px;
+}
+
+/* Pen icon (Düzenle) rengini turuncu yapma */
+.dropdown-menu .fa-pen {
+    color: orange;
+    margin-right: 7px;
 }
 .task {
     display: flex;
@@ -42,7 +65,9 @@ body {
 }
 .task label.checked {
     text-decoration: line-through;
+
 }
+
 .controls {
     display: flex;
     align-items: center;
@@ -91,3 +116,27 @@ body {
         width: 99%;
     }  
 }
+.row {
+    margin-bottom: 18px;
+}
+.btn-custom-red {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+  }
+  
+  .btn-custom-red:hover {
+    background-color: darkred;
+    border-color: darkred;
+  }
+  label {
+    word-break: break-all;
+
+  }
+
+  
+  
+
+
+
+  
