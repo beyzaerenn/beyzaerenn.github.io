@@ -120,7 +120,7 @@
     <script>
       ("use strict");
 
-      let gorevListesi = [""];
+      let gorevListesi = [];
 
       if (localStorage.getItem("gorevListesi") !== null) {
         gorevListesi = JSON.parse(localStorage.getItem("gorevListesi"));
@@ -313,6 +313,8 @@
         localStorage.setItem("gorevListesi", JSON.stringify(gorevListesi));
       }
 
+
+      
 
 
 
